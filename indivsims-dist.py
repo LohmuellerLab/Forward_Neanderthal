@@ -109,7 +109,7 @@ def main():
 	results_vec = []
 	
 	for i in xrange(niter):
-		s = numpy.random.gamma(0.184, 7200)
+		s = numpy.random.gamma(0.184, 8200)
 		s = s/(2.*25636)
 		results_vec.append(summary(trajecvec(h, s, popn, pct)))
 		sys.stdout.write('{0}\r'.format(i))
